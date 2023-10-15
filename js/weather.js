@@ -10,7 +10,7 @@ function onGeoOk(position) {
     .then(response => response.json())
     .then(data => {
       const region = data.name;
-      const currentTemp = data.main.temp;
+      const currentTemp = Math.round(data.main.temp);
       const maxTemp = Math.round(data.main.temp_max);
       const minTemp = Math.round(data.main.temp_min);
       const weather = data.weather[0].description;
