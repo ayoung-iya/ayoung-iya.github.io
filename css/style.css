@@ -1,18 +1,19 @@
+body {
+  min-width: 36rem;
+  min-height: 40rem;
+  width: 100vw;
+  height: 100vh;
+}
+
 .container {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 36rem;
-  min-height: 40rem;
-  width: 100vw;
-  height: 100vh;
-  background: url("../images/jack-anstey.jpg") no-repeat center/cover;
+  /* background: url("../images/jack-anstey.jpg") no-repeat center/cover; */
 
   color: #fff;
 }
-
-/* 16px = 1rem? 0.16rem */
 
 .login-form {
   position: absolute;
@@ -26,6 +27,8 @@
   gap: 1rem;
   font-size: 3.6rem;
   text-shadow: 0.08rem 0.08rem 0.18rem #000;
+
+  color: #fff;
 }
 
 .input-label {

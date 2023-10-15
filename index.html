@@ -1,76 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container hidden">
+      <div class="top-info-area">
+        <div class="clock-group">
+          <span class="clock">12:00</span>
+          <span class="date">10월 15일 일요일</span>
+        </div>
+        <div class="weather-area">
+          <p class="weather-group">
+            <span class="temperature">해 23도</span>
+            <span class="weather">맑음</span>
+          </p>
+          <p class="temperature-group">
+            <span class="high">최고: 23도</span>
+            <span class="low">최저: 18도</span>
+          </p>
+        </div>
+      </div>
+      <h1 class="greeting">
+        <span>Good afternoon, </span>
+        <span>ayoung</span>
+      </h1>
+      <div class="bottom-area">
+        <section class="todo-list-area">
+          <h3 class="title">Todos</h3>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Write a To do and Press Enter."
+              class="todo-input"
+            />
+          </form>
+          <ul class="todo-list">
+            <li class="todo-item">
+              <span class="todo">클론코딩</span>
+              <button class="btn-delete">✕</button>
+            </li>
+            <li class="todo-item">
+              <span class="todo">책읽기</span>
+              <button class="btn-delete">✕</button>
+            </li>
+            <li class="todo-item">
+              <span class="todo">you</span>
+              <button class="btn-delete">✕</button>
+            </li>
+            <li class="todo-item">
+              <span class="todo">anergy 나는 너의 anergy</span>
+              <button class="btn-delete">✕</button>
+            </li>
+            <li class="todo-item">
+              <span class="todo">anergy 나는 너의 anergy</span>
+              <button class="btn-delete">✕</button>
+            </li>
+            <li class="todo-item">
+              <span class="todo">anergy 나는 너의 anergy</span>
+              <button class="btn-delete">✕</button>
+            </li>
+          </ul>
+        </section>
+        <section class="quote-area">
+          <div class="author">Robert H. Goddard</div>
+          <h3 class="quote">
+            It is difficult to say what is impossible, for the dream of
+            yesterday is the hope of today and the reality of tomorrow.
+          </h3>
+        </section>
+      </div>
+    </div>
+
+    <!-- 로그인 페이지 -->
     <form action="" class="login-form">
       <label for="" class="login-label">Hello, what's your name?</label>
-      <input type="text" class="login-input">
+      <input type="text" class="login-input" />
     </form>
-    <div class="top-info-area hidden">
-      <div class="clock-group">
-        <span class="clock">12:00</span>
-        <span class="date">10월 15일 일요일</span>
-      </div>
-      <div class="weather-area">
-        <p class="weather-group">
-          <span class="temperature">해 23도</span>
-          <span class="weather">맑음</span>
-        </p>
-        <p class="temperature-group">
-          <span class="high">최고: 23도</span>
-          <span class="low">최저: 18도</span>
-        </p>
-      </div>
-    </div>
-    <h1 class="greeting hidden">
-      <span>Good afternoon, </span>
-      <span>ayoung</span>
-    </h1>
-    <div class="bottom-area hidden">
-      <section class="todo-list-area">
-        <h3 class="title">Todos</h3>
-        <form action="">
-          <input type="text" placeholder="Write a To do and Press Enter." class="todo-input">
-        </form>
-        <ul class="todo-list">
-          <li class="todo-item">
-            <span class="todo">클론코딩</span>
-            <button class="btn-delete">✕</button>
-          </li>
-          <li class="todo-item">
-            <span class="todo">책읽기</span>
-            <button class="btn-delete">✕</button>
-          </li>
-          <li class="todo-item">
-            <span class="todo">you</span>
-            <button class="btn-delete">✕</button>
-          </li>
-          <li class="todo-item">
-            <span class="todo">anergy 나는 너의 anergy</span>
-            <button class="btn-delete">✕</button>
-          </li>
-          <li class="todo-item">
-            <span class="todo">anergy 나는 너의 anergy</span>
-            <button class="btn-delete">✕</button>
-          </li>
-          <li class="todo-item">
-            <span class="todo">anergy 나는 너의 anergy</span>
-            <button class="btn-delete">✕</button>
-          </li>
-        </ul>
-      </section>
-      <section class="quote-area">
-        <div class="author">Robert H. Goddard</div>
-        <h3 class="quote">It is difficult to say what is impossible, for the dream of yesterday is the hope of today and the reality of tomorrow.</h3>
-      </section>
-    </div>
-  </div>
-</body>
+    <!-- // 로그인 페이지 -->
+    <script src="./js/background.js"></script>
+  </body>
 </html>
