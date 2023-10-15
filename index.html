@@ -33,52 +33,25 @@
       <div class="bottom-area hidden">
         <section class="todo-list-area">
           <h3 class="title">Todos</h3>
-          <form action="">
+          <form action="" class="todo-form">
             <input
               type="text"
               placeholder="Write a To do and Press Enter."
               class="todo-input"
+              required
             />
           </form>
-          <ul class="todo-list">
-            <li class="todo-item">
-              <span class="todo">클론코딩</span>
-              <button class="btn-delete">✕</button>
-            </li>
-            <li class="todo-item">
-              <span class="todo">책읽기</span>
-              <button class="btn-delete">✕</button>
-            </li>
-            <li class="todo-item">
-              <span class="todo">you</span>
-              <button class="btn-delete">✕</button>
-            </li>
-            <li class="todo-item">
-              <span class="todo">anergy 나는 너의 anergy</span>
-              <button class="btn-delete">✕</button>
-            </li>
-            <li class="todo-item">
-              <span class="todo">anergy 나는 너의 anergy</span>
-              <button class="btn-delete">✕</button>
-            </li>
-            <li class="todo-item">
-              <span class="todo">anergy 나는 너의 anergy</span>
-              <button class="btn-delete">✕</button>
-            </li>
-          </ul>
+          <ul class="todo-list"></ul>
         </section>
-        <section class="quote-area">
-          <div class="author">Robert H. Goddard</div>
-          <h3 class="quote">
-            It is difficult to say what is impossible, for the dream of
-            yesterday is the hope of today and the reality of tomorrow.
-          </h3>
-        </section>
+        <section class="quote-area"></section>
       </div>
     </div>
 
     <script type="module" src="./js/background.js"></script>
     <script type="module" src="./js/clock.js"></script>
     <script type="module" src="./js/greeting.js"></script>
+    <script type="module" src="./js/quotes.js"></script>
+    <script type="module" src="./js/todos.js"></script>
+    <!-- <script type="module" src="./js/weather.js"></script> -->
   </body>
 </html>
