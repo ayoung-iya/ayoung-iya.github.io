@@ -25,13 +25,11 @@ function onGeoOk(position) {
         <span>최고: ${maxTemp}° 최저: ${minTemp}°</span>
       </p>
       `
-      console.log(data);
     })
 }
 
 function onGeoError() {
-  // alert("위치를 찾을 수 없습니다.")
-  console.log("fail");
+  alert("위치를 찾을 수 없습니다.")
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
