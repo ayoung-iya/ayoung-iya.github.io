@@ -1,10 +1,14 @@
 function onGeoOk(position) {
-  // const lat = position.coords.latitude;
-  // const long = position.coords.longitude;
+  const API_KEY = "91e9f3878adf25f8741778736757e512";
 
-  // console.log(lat);
-  // console.log(long);
-  console.log(position)
+  const lat = position.coords.latitude;
+  const long = position.coords.longitude;
+
+  fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}`)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    })
 }
 
 function onGeoError() {
