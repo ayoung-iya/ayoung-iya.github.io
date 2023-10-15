@@ -21,9 +21,8 @@ function onGeoOk(position) {
         <span class="region">${region}</span>
       </p>
       <p class="temperature-group">
-        <span class="weather">${weather}</span>
-        <span class="high">최고: ${maxTemp}°</span>
-        <span class="low">최저: ${minTemp}°</span>
+        <span>${weather}</span>
+        <span>최고: ${maxTemp}° 최저: ${minTemp}°</span>
       </p>
       `
       console.log(data);

@@ -7,8 +7,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background: url("../images/jack-anstey.jpg") no-repeat center/cover; */
-
   color: #fff;
 }
 
@@ -24,17 +22,15 @@
   gap: 1rem;
   font-size: 3.6rem;
   text-shadow: 0.08rem 0.08rem 0.18rem #000;
-
-  color: #fff;
 }
 
-.input-label {
-  width: 100%;
+.login-label {
+  white-space: nowrap;
 }
 
 .login-input {
   background-color: transparent;
-  width: 50%;
+  width: 40rem;
   border-bottom: 0.2rem solid #fff;
   color: #fff;
   text-align: center;
@@ -52,11 +48,8 @@
 
 .top-info-area {
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: flex-end; */
   justify-content: space-between;
   margin: 0.7rem 1.3rem;
-  text-align: right;
   text-shadow: 0.04rem 0.04rem 0.1rem #000;
 }
 
@@ -64,7 +57,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 0.4rem;
   width: 8rem;
 }
 
@@ -90,9 +82,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0.4rem;
 }
 
 .weather-area .temperature {
+  line-height: 1.1;
   font-size: 2rem;
 }
 
@@ -104,13 +98,11 @@
   opacity: 0.8;
 }
 
-
 .bottom-area {
   display: flex;
   gap: 2rem;
   margin: 0.7rem 1.3rem;
-  /* width: calc(100% - 2.6rem); */
-  height: 60%;
+  height: 56%;
   align-items: flex-end;
 }
 
@@ -118,9 +110,9 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 0.2rem 1rem;
+  padding: 0.4rem 1rem;
   max-width: 28rem;
-  height: 90%;
+  height: 100%;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -131,8 +123,9 @@
 }
 
 .todo-list-area .todo-input {
-  margin: 0.8rem 0.4rem 1rem;
-  width: calc(100% - 0.8rem);
+  margin: 0.8rem 0.8rem 1rem;
+  padding-bottom: 0.4rem;
+  width: calc(100% - 1.6rem);
   background-color: transparent;
   border-bottom: 1px solid #fff;
   color: #fff;
@@ -147,7 +140,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 0.8rem;
+  padding-left: 1rem;
   height: 100%;
   overflow: auto;
 }
@@ -157,8 +150,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* padding: 0.4rem 0; */
-  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -198,21 +189,8 @@
     font-weight: 300;
   }
 
-  /* .top-info-area {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .weather-area {
-    order: -1;
-    align-items: flex-start;
-  } */
-
   .bottom-area {
     gap: 0;
-    top: 44%;
-    bottom: 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;

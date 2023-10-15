@@ -4,7 +4,7 @@ const clockGroup = document.querySelector(".clock-group");
 
 function current() {
   const currentHour = new Date().getHours();
-  const currentMinute = new Date().getMinutes();
+  const currentMinute = String(new Date().getMinutes()).padStart(2, "0");
   const currentMonth = new Date().getMonth() + 1;
   const currentDate = new Date().getDate();
   const currentDay = `${days[new Date().getDay()]}요일`;
