@@ -52,8 +52,9 @@
 
 .top-info-area {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  /* flex-direction: column; */
+  /* align-items: flex-end; */
+  justify-content: space-between;
   margin: 0.7rem 1.3rem;
   text-align: right;
   text-shadow: 0.04rem 0.04rem 0.1rem #000;
@@ -78,16 +79,28 @@
 }
 
 .weather-area {
+  order: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 8rem;
 }
 
+.weather-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-area .temperature {
+  font-size: 2rem;
+}
+
 .temperature-group {
   font-size: 0.8rem;
   opacity: 0.8;
 }
+
 
 .bottom-area {
   display: flex;
@@ -182,7 +195,7 @@
     font-weight: 300;
   }
 
-  .top-info-area {
+  /* .top-info-area {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -191,7 +204,7 @@
   .weather-area {
     order: -1;
     align-items: flex-start;
-  }
+  } */
 
   .bottom-area {
     gap: 0;
