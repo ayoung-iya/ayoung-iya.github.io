@@ -1,0 +1,215 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 36rem;
+  min-height: 40rem;
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/jack-anstey.jpg") no-repeat center/cover;
+
+  color: #fff;
+}
+
+/* 16px = 1rem? 0.16rem */
+
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 3.6rem;
+  text-shadow: 0.08rem 0.08rem 0.18rem #000;
+}
+
+.input-label {
+  width: 100%;
+}
+
+.login-input {
+  background-color: transparent;
+  width: 50%;
+  border-bottom: 0.2rem solid #fff;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0.08rem 0.08rem 0.18rem #000;
+}
+
+.greeting {
+  line-height: 1;
+  font-size: 4rem;
+  text-align: center;
+  white-space: nowrap;
+  text-shadow: 0.06rem 0.06rem 0.18rem #000;
+}
+
+.top-info-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0.7rem 1.3rem;
+  text-align: right;
+}
+
+.clock-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  width: 8rem;
+}
+
+.clock {
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.date {
+  font-size: 0.9rem;
+}
+
+.weather-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+}
+
+.temperature-group {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.bottom-area {
+  display: flex;
+  gap: 2rem;
+  margin: 0.7rem 1.3rem;
+  /* width: calc(100% - 2.6rem); */
+  height: 60%;
+  align-items: flex-end;
+}
+
+.todo-list-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem 1rem;
+  max-width: 28rem;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.todo-list-area .title {
+  font-size: 2.4rem;
+}
+
+.todo-list-area .todo-input {
+  margin: 0.4rem 0.4rem 1rem;
+  width: calc(100% - 0.8rem);
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.todo-list-area .todo-input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0.8rem;
+  height: 100%;
+  overflow: auto;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* padding: 0.4rem 0; */
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.btn-delete {
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+}
+
+.todo-item:hover {
+  font-weight: 600;
+}
+
+.quote-area {
+  flex: 1;
+  text-align: right;
+}
+
+.quote {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.author {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .greeting {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .top-info-area {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .weather-area {
+    order: -1;
+    align-items: flex-start;
+  }
+
+  .bottom-area {
+    gap: 0;
+    top: 44%;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .todo-list-area {
+    flex: 3;
+    max-width: none;
+    min-height: 20rem;
+    text-align: center;
+  }
+
+  .quote-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
