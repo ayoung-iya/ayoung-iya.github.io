@@ -11,16 +11,17 @@ function onGeoOk(position) {
     .then(data => {
       const region = data.name;
       const currentTemp = data.main.temp;
-      const maxTemp = data.main.temp_max;
-      const minTemp = data.main.temp_min;
+      const maxTemp = Math.round(data.main.temp_max);
+      const minTemp = Math.round(data.main.temp_min);
       const weather = data.weather[0].description;
 
       weatherArea.innerHTML = `
       <p class="weather-group">
         <span class="temperature">${currentTemp}°</span>
-        <span class="region">${region} ${weather}</span>
+        <span class="region">${region}</span>
       </p>
       <p class="temperature-group">
+        <span class="weather">${weather}</span>
         <span class="high">최고: ${maxTemp}°</span>
         <span class="low">최저: ${minTemp}°</span>
       </p>
