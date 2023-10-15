@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container hidden">
-      <div class="top-info-area">
+    <div class="container">  
+      <!-- 로그인 페이지 -->
+      <form action="" class="login-form">
+        <label for="" class="login-label">Hello, what's your name?</label>
+        <input type="text" class="login-input" />
+      </form>
+      <!-- // 로그인 페이지 -->
+
+      <div class="top-info-area hidden">
         <div class="clock-group">
           <span class="clock">12:00</span>
           <span class="date">10월 15일 일요일</span>
@@ -25,11 +32,10 @@
           </p>
         </div>
       </div>
-      <h1 class="greeting">
-        <span>Good afternoon, </span>
-        <span>ayoung</span>
+      <h1 class="greeting-area hidden">
+
       </h1>
-      <div class="bottom-area">
+      <div class="bottom-area hidden">
         <section class="todo-list-area">
           <h3 class="title">Todos</h3>
           <form action="">
@@ -76,12 +82,7 @@
       </div>
     </div>
 
-    <!-- 로그인 페이지 -->
-    <form action="" class="login-form">
-      <label for="" class="login-label">Hello, what's your name?</label>
-      <input type="text" class="login-input" />
-    </form>
-    <!-- // 로그인 페이지 -->
-    <script src="./js/background.js"></script>
+    <script type="module" src="./js/background.js"></script>
+    <script type="module" src="./js/greeting.js"></script>
   </body>
 </html>

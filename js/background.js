@@ -8,6 +8,7 @@ const backgrounds = [
   'rebe-adelaida.jpg'
 ];
 
+const container = document.querySelector(".container");
 const chosenbg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
 
-document.body.style.background = `url(../images/${chosenbg}) no-repeat center/cover`;
+container.style.background = `url(../images/${chosenbg}) no-repeat center/cover`;
