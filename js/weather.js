@@ -8,28 +8,8 @@ function onGeoOk(position) {
 }
 
 function onGeoError() {
-  alert("위치를 찾을 수 없습니다.")
+  // alert("위치를 찾을 수 없습니다.")
+  console.log("fail");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
-
-const options = {
-  enableHighAccuracy: true,
-  timeout: 5000,
-  maximumAge: 0,
-};
-
-function success(pos) {
-  const crd = pos.coords;
-
-  console.log("Your current position is:");
-  console.log(`Latitude : ${crd.latitude}`);
-  console.log(`Longitude: ${crd.longitude}`);
-  console.log(`More or less ${crd.accuracy} meters.`);
-}
-
-function error(err) {
-  console.warn(`ERROR(${err.code}): ${err.message}`);
-}
-
-navigator.geolocation.getCurrentPosition(success, error, options);
